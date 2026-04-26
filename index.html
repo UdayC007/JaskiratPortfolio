@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jaskirat Singh — UI/UX Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&family=Major+Mono+Display&family=Share+Tech+Mono&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="grid-overlay"></div>
+  <div class="static-overlay"></div>
+
+  <div class="status-bar">
+    <span><span class="blink">●</span> SIGNAL <span style="color:var(--cyan)">STABLE</span></span>
+    <span>SYS://JASKIRAT.SINGH/<span class="ip">v01.04.26</span></span>
+    <span>// LOC <span style="color:var(--text)">DEHRADUN</span></span>
+  </div>
+
+  <nav class="nav" id="nav">
+    <a href="#" class="nav-logo">
+      <span class="brand-mark"></span>
+      <span id="nav-name">JASKIRAT//</span>
+    </a>
+    <div class="nav-links" id="nav-links">
+      <a href="#about">SIGNAL</a>
+      <a href="#curriculum">SEM_01</a>
+      <a href="#projects">WORK</a>
+      <a href="#skills">STACK</a>
+      <a href="#contact">PING</a>
+    </div>
+    <button class="nav-burger" id="nav-burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <p class="hero-pre reveal">// PROCESS_BOOTING — VERSION 01.04.26</p>
+      <h1 class="hero-name reveal">
+        <span class="first" id="hero-first">JASKIRAT</span>
+        <span class="last" id="hero-last" data-text="SINGH">SINGH</span>
+      </h1>
+      <div class="hero-meta reveal">
+        <span><span class="label">CLASS</span> <span class="val" id="hero-title">UI/UX DESIGNER</span></span>
+        <span class="pipe">||</span>
+        <span><span class="label">YEAR</span> <span class="val" id="hero-year">1ST</span></span>
+        <span class="pipe">||</span>
+        <span><span class="label">NODE</span> <span class="val" id="hero-college">DIT UNIVERSITY</span></span>
+      </div>
+      <p class="hero-tagline reveal" id="hero-tagline">
+        Wiring interfaces in the static. First-year designer / signal-hunter.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#projects" class="btn-cyber">▶ ENTER_WORK</a>
+        <a href="#contact" class="btn-magenta">◇ OPEN_CHANNEL</a>
+      </div>
+    </div>
+    <div class="hero-portrait-photo" id="hero-portrait-photo"></div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">SIGNAL // PLAYER_DATA</span>
+        <h2>WHO_<span class="neon">IS</span>_<span class="neon-pink">JASKIRAT</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="reveal">
+          <div class="about-portrait" id="about-portrait"></div>
+          <div class="about-bio-card">
+            <div class="about-stats">
+              <div class="stat-row"><span class="k">// NAME</span><span class="v" id="about-name">Jaskirat Singh</span></div>
+              <div class="stat-row"><span class="k">// CLASS</span><span class="v" id="about-class">UI/UX Designer</span></div>
+              <div class="stat-row"><span class="k">// YEAR</span><span class="v" id="about-year">1st Year</span></div>
+              <div class="stat-row"><span class="k">// NODE</span><span class="v" id="about-college">DIT University, Dehradun</span></div>
+            </div>
+            <p class="about-bio" id="about-bio">Loading bio…</p>
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="about-extra">
+            <div class="extra-card">
+              <span class="ec-tag">// PERSONAL_TOUCH</span>
+              <h4>Off the grid</h4>
+              <p id="personal-touch">—</p>
+            </div>
+            <div class="extra-card">
+              <span class="ec-tag">// SIGNAL_OUT</span>
+              <h4>Where I'm headed</h4>
+              <p id="goals-text">—</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Curriculum -->
+  <section class="section" id="curriculum">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">SEM_01 // CURRICULUM</span>
+        <h2>SUBJECTS_&_<span class="neon">FACULTY</span></h2>
+      </div>
+      <div class="subject-grid" id="subject-grid"></div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">WORK // ARCHIVE</span>
+        <h2>SHIPPED_<span class="neon-pink">SIGNALS</span></h2>
+      </div>
+      <div class="projects-grid" id="projects-grid"></div>
+      <div class="empty-msg" id="no-projects" style="display:none;">// NO_DATA — UPLOAD WORK FROM /admin</div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">STACK // SKILL_TREE</span>
+        <h2>TOOLS_<span class="neon">EQUIPPED</span></h2>
+      </div>
+      <div class="skills-grid" id="skills-grid"></div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">PING // CHANNEL_OPEN</span>
+        <h2>SAY_<span class="neon-pink">HI</span></h2>
+      </div>
+      <div class="comm-box reveal">
+        <h3>WANT TO BUILD <span class="neon">SOMETHING?</span></h3>
+        <p>Drop a signal. Slow projects, dumb ideas, late-night chats — all welcome.</p>
+        <div class="comm-links" id="msg-links"></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-row">
+      <span id="footer-name">// JASKIRAT SINGH <span class="dot">●</span> 2026</span>
+      <span>EOF // <span class="dot">●</span> END_TRANSMISSION</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
