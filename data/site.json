@@ -27,5 +27,5 @@
     { "name": "Visual Identity", "level": 72, "rank": "A" },
     { "name": "Motion Design",   "level": 55, "rank": "C" }
   ],
-  "photos": { "hero": null, "about": null, "brand": null }
+  "photos": { "hero": "uploads/jaskirat-hero.jpg", "about": "uploads/jaskirat-hero.jpg", "brand": "uploads/jaskirat-hero.jpg" }
 }
