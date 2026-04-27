@@ -8,6 +8,8 @@ const nav = document.querySelector('.nav');
 window.addEventListener('scroll', () => nav && nav.classList.toggle('scrolled', window.scrollY > 60));
 
 function projectId() {
+  const params = new URLSearchParams(window.location.search);
+  if (params.get('id')) return params.get('id');
   const parts = window.location.pathname.split('/').filter(Boolean);
   return parts[parts.length - 1];
 }
@@ -21,7 +23,7 @@ function gallerySize(i, total) {
 
 async function loadSite() {
   try {
-    const r = await fetch('/api/site');
+    const r = await fetch('data/site.json');
     const s = await r.json();
     const p = s.profile || {};
     $('nav-name').textContent = (p.name || 'JASKIRAT').split(' ')[0].toUpperCase() + '//';
@@ -37,9 +39,12 @@ async function loadSite() {
 async function loadProject() {
   const root = $('project-root');
   try {
-    const r = await fetch('/api/projects/' + encodeURIComponent(projectId()));
-    if (!r.ok) throw new Error('SIGNAL_NOT_FOUND');
-    const p = await r.json();
+    const r = await fetch('data/projects.json');
+    if (!r.ok) throw new Error('SIGNAL_LOST');
+    const data = await r.json();
+    const list = Array.isArray(data) ? data : (data.items || []);
+    const p = list.find(x => x.id === projectId());
+    if (!p) throw new Error('SIGNAL_NOT_FOUND');
     document.title = `${p.title} // Jaskirat Singh`;
 
     const all = p.images || [];
@@ -82,11 +87,11 @@ async function loadProject() {
         </div>` : ''}
 
       <div style="text-align:center;margin-top:30px">
-        <a href="/#projects" class="btn-cyber">← MORE_SIGNALS</a>
+        <a href="index.html#projects" class="btn-cyber">← MORE_SIGNALS</a>
       </div>
     `;
   } catch (e) {
-    root.innerHTML = `<div style="background:var(--bg-card);border:1px solid var(--border);padding:60px;text-align:center"><h3 style="font-family:var(--font-glitch);font-size:2rem;color:var(--magenta)">${esc(e.message)}</h3><p style="color:var(--text-sec);margin-top:10px">This signal may have been wiped. <a href="/" style="color:var(--cyan)">Return →</a></p></div>`;
+    root.innerHTML = `<div style="background:var(--bg-card);border:1px solid var(--border);padding:60px;text-align:center"><h3 style="font-family:var(--font-glitch);font-size:2rem;color:var(--magenta)">${esc(e.message)}</h3><p style="color:var(--text-sec);margin-top:10px">This signal may have been wiped. <a href="index.html" style="color:var(--cyan)">Return →</a></p></div>`;
   }
 }
 

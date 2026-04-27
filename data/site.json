@@ -1,0 +1,35 @@
+{
+  "profile": {
+    "name": "Jaskirat Singh",
+    "title": "UI/UX Designer",
+    "year": "1st Year",
+    "college": "DIT University, Dehradun",
+    "tagline": "Wiring interfaces in the static. First-year designer / signal-hunter.",
+    "bio": "A first-year design student building in the gap between glitch and clarity. I like interfaces that hum, type that flickers on purpose, and the colour of monitors at 3 a.m.",
+    "personalTouch": "Off the grid I make playlists with too much synthwave, sketch typography in 0.1mm pen, and rebuild keyboards I don't need. Vibes: late nights, neon, slow code.",
+    "goals": "Build a portfolio with shipped, polished work; learn motion design and shaders properly; intern at a studio that takes craft seriously."
+  },
+  "contact": {
+    "email": "Jaskirat081207@gmail.com",
+    "instagram": "jaskirat.07",
+    "twitter": "jaskiratsingh",
+    "linkedin": ""
+  },
+  "subjects": [
+    { "code": "CSE101", "name": "Programming Fundamentals", "faculty": "" },
+    { "code": "MAT101", "name": "Engineering Mathematics I", "faculty": "" },
+    { "code": "PHY101", "name": "Engineering Physics", "faculty": "" },
+    { "code": "ENG101", "name": "Communication Skills", "faculty": "" },
+    { "code": "ELC101", "name": "Basic Electronics", "faculty": "" },
+    { "code": "WSP101", "name": "Workshop Practice", "faculty": "" }
+  ],
+  "skills": [
+    { "name": "UI Design",       "level": 78, "rank": "A" },
+    { "name": "UX Research",     "level": 70, "rank": "B" },
+    { "name": "Prototyping",     "level": 80, "rank": "A" },
+    { "name": "Type Design",     "level": 65, "rank": "B" },
+    { "name": "Visual Identity", "level": 72, "rank": "A" },
+    { "name": "Motion Design",   "level": 55, "rank": "C" }
+  ],
+  "photos": { "hero": null, "about": null, "brand": null }
+}
