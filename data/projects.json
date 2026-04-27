@@ -1,1 +1,49 @@
-{"items":[]}
+{
+  "items": [
+    {
+      "id": "p4-wave-painting",
+      "title": "Wave — A Texture Study",
+      "description": "An impasto study of a single curling wave, painted with thick palette-knife strokes against a soft sky-blue gradient. The piece is about feeling the weight of a moment of water before it falls — built up in layers so that the paint itself ridges and breaks like spray.",
+      "teacher": "Aaditya Raj Sharma",
+      "category": "Typography",
+      "year": "2025",
+      "tags": ["Painting", "Texture", "Impasto"],
+      "link": "",
+      "color": "#00ffe1",
+      "images": [
+        "uploads/jaskirat-p4-wave-painting.jpg"
+      ],
+      "createdAt": 1745738000000
+    },
+    {
+      "id": "p3-elements-of-design",
+      "title": "Design Matrix — Elements × Principles",
+      "description": "A wall-sized matrix mapping the seven elements of design (Line, Shape, Form, Color, Volume, Texture, Space) against the seven principles (Balance, Movement, Repetition, Contrast, Emphasis, Proportion, Unity) — and filling each cell with a real-world brand mark that demonstrates that combination. Hand-drawn, hand-painted, hand-cut. A small atlas of how visual language actually works in the world.",
+      "teacher": "",
+      "category": "Elements of Design",
+      "year": "2025",
+      "tags": ["Foundation", "Design Theory", "Branding", "Logos"],
+      "link": "",
+      "color": "#ff2bd6",
+      "images": [
+        "uploads/jaskirat-p3-design-matrix.jpg"
+      ],
+      "createdAt": 1745735000000
+    },
+    {
+      "id": "p2-dyslexia-typeface",
+      "title": "Dyslexia-Friendly Typeface — Research & Letterforms",
+      "description": "A research-led typography brief: how do you design a typeface that is genuinely easier to read for someone with dyslexia? The poster opens with a short brief on dyslexia (a neurological learning difficulty that affects reading, spelling and decoding), benchmarks existing solutions, and lays out the project's own design principles — heavily weighted bottoms, asymmetrical letterforms, wider letter-and-word spacing, slab-serif style.\n\nThe lower half is the typeface itself: a complete a–z, each letter drawn on its own paper coin so it can be moved, compared and rearranged.",
+      "teacher": "Aaditya Raj Sharma",
+      "category": "Typography",
+      "year": "2025",
+      "tags": ["Typography", "Accessibility", "Type Design", "Research"],
+      "link": "",
+      "color": "#00ffe1",
+      "images": [
+        "uploads/jaskirat-p2-dyslexia-typeface.jpg"
+      ],
+      "createdAt": 1745731000000
+    }
+  ]
+}
